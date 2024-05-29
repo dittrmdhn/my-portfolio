@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/img.jpg";
+import headerImg from "../assets/img/fotogue.jpg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -59,7 +59,7 @@ export const Banner = () => {
 
 	const cvClink = () => {
 		window.open(
-			"https://drive.google.com/file/d/1av7iaq3jOl9SWgcFH2xzBXCNaxl6jbMm/view?usp=sharing",
+			"https://drive.google.com/file/d/1dIlFqgL_Ebo8BaHD4vnzsQulfFn_gyyA/view?usp=sharing",
 			"_blank"
 		);
 	};
@@ -105,7 +105,7 @@ export const Banner = () => {
 					<Col xs={12} md={6} xl={5}>
 						<TrackVisibility>
 							<div>
-								<img src={headerImg} alt="Header Img" />
+								<img className="img-me" src={headerImg} alt="Header Img" />
 							</div>
 						</TrackVisibility>
 					</Col>

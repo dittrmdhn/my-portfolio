@@ -87,7 +87,7 @@ export const NavBar = () => {
 							: "scrolled stopped"
 						: ""
 				} ${hovered && windowWidth > 765 ? "hovered" : ""} ${
-					windowWidth <= 765 ? "navbar-red" : ""
+					windowWidth <= 765 ? "navbar-bg" : ""
 				}`}
 			>
 				<Container>

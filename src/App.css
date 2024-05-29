@@ -242,7 +242,7 @@ nav.navbar .navbar-toggler-icon:before {
 	position: absolute;
 	height: 2px;
 	background-color: #fff;
-	top: 0;
+	top: 1px;
 	left: 0;
 	content: "";
 	z-index: 2;
@@ -820,6 +820,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 }
 
+img.img-me {
+	width: 90%;
+}
+
 @media screen and (max-width: 500px) {
 	.proj-txtx {
 		padding: 20px;
@@ -977,8 +981,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media (max-width: 765px) {
-	.navbar-red {
-		background-color: #1a1111 !important;
+	.navbar-bg {
+		background-color: #2d2a2a !important;
+		border-radius: 0 0 10px 10px;
+	}
+
+	nav.navbar.scrolled {
+		padding: 8px 0;
 	}
 
 	.no-hover {
