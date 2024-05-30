@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/fotogue.jpg";
+import headerImg from "../assets/img/foto-me.jpg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -79,7 +79,7 @@ export const Banner = () => {
 								dataPeriod="10"
 								data-rotate='[ "Web Developer", "Back End" ]'
 							>
-								<span className="wrap">{text}</span>
+								<span className="wrap text-run">{text}</span>
 								<span className="cursor">|</span>
 							</span>
 						</h1>
