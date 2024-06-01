@@ -59,7 +59,7 @@ export const Banner = () => {
 
 	const cvClink = () => {
 		window.open(
-			"https://drive.google.com/file/d/1dIlFqgL_Ebo8BaHD4vnzsQulfFn_gyyA/view?usp=sharing",
+			"https://drive.google.com/file/d/1UCgrmxpp7fV-ELOgvlcm7mPWMNY3b67X/view?usp=sharing",
 			"_blank"
 		);
 	};
