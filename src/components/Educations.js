@@ -1,42 +1,51 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../App.css";
+import { useInView } from "react-intersection-observer";
 
 const Educations = () => {
-	const [isVisible, setIsVisible] = useState(false);
-	const educationRef = useRef(null);
-
-	useEffect(() => {
-		const threshold = window.innerWidth < 600 ? 0.3 : 0.7;
-
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				setIsVisible(entry.isIntersecting);
-			},
-			{ threshold }
-		);
-
-		if (educationRef.current) {
-			observer.observe(educationRef.current);
-		}
-
-		return () => {
-			if (educationRef.current) {
-				observer.unobserve(educationRef.current);
+	const [hasScrolled, setHasScrolled] = useState(false);
+	const { ref: educationRef, inView: educationView } = useInView({
+		triggerOnce: false,
+		threshold: 0.1,
+		onChange: (inView) => {
+			if (inView && hasScrolled) {
+				setHasScrolled(true);
 			}
-		};
-	}, []);
+		},
+	});
+
+	const { ref: education1Ref, inView: education1InView } = useInView({
+		triggerOnce: false,
+		threshold: 0.1,
+		onChange: (inView) => {
+			if (inView && hasScrolled) {
+				setHasScrolled(true);
+			}
+		},
+	});
 	return (
 		<section
-			className={`education 	mb-5 ${isVisible ? "visible" : ""}`}
-			id="educations"
 			ref={educationRef}
+			className={`education mt-12 transition-transform duration-500 ${
+				hasScrolled || educationView
+					? "opacity-100 translate-y-0"
+					: "opacity-0 translate-y-20"
+			}`}
+			id="educations"
 		>
 			<Container>
 				<h2 className="text-center mb-4 education-title mt-4  fw-bold">
 					Educations
 				</h2>
-				<div className="d-flex justify-content-center">
+				<div
+					ref={education1Ref}
+					className={`d-flex justify-center mt-12 transition-transform duration-500 ${
+						hasScrolled || education1InView
+							? "opacity-100 translate-y-0"
+							: "opacity-0 translate-y-20"
+					}`}
+				>
 					<div className="d-fjustify-content-center education-level">
 						<div className="education-item-step ">{/* tangga tingkatan */}</div>
 						<div className="education-item-step2 ">

@@ -11,10 +11,8 @@ export const Banner = () => {
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [text, setText] = useState("");
 	const [delta, setDelta] = useState(200);
-	const [index, setIndex] = useState(1);
 	const toRotate = ["Web Developer", "Back End"];
-	const period = 2000;
-	const [waiting, setWaiting] = useState(false); // tambahan state untuk mengelola jeda
+	const [waiting, setWaiting] = useState(false);
 
 	useEffect(() => {
 		if (waiting) return;
@@ -83,7 +81,7 @@ export const Banner = () => {
 								<span className="cursor">|</span>
 							</span>
 						</h1>
-						<p>
+						<p className="!text-gray-400">
 							A software engineering student with a passion for technology,
 							especially programming. Working in a team is something I find very
 							enjoyable.

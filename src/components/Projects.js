@@ -4,32 +4,30 @@ import Project1 from "../assets/project/shoestock.png";
 import Project2 from "../assets/project/inbako.png";
 import "animate.css";
 import "../App.css";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 export const Projects = () => {
-	const [isVisible, setIsVisible] = useState(false);
-	const projectRef = useRef(null);
-
-	useEffect(() => {
-		const threshold = window.innerWidth < 600 ? 0.3 : 0.7;
-
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				setIsVisible(entry.isIntersecting);
-			},
-			{ threshold }
-		);
-
-		if (projectRef.current) {
-			observer.observe(projectRef.current);
-		}
-
-		return () => {
-			if (projectRef.current) {
-				observer.unobserve(projectRef.current);
+	const [hasScrolled, setHasScrolled] = useState(false);
+	const { ref: projectRef, inView: projectView } = useInView({
+		triggerOnce: false,
+		threshold: 0.1,
+		onChange: (inView) => {
+			if (inView && hasScrolled) {
+				setHasScrolled(true);
 			}
-		};
-	}, []);
+		},
+	});
+
+	const { ref: projectImageRef, inView: projectImageInView } = useInView({
+		triggerOnce: false,
+		threshold: 0.1,
+		onChange: (inView) => {
+			if (inView && hasScrolled) {
+				setHasScrolled(true);
+			}
+		},
+	});
 
 	const projects = [
 		{
@@ -48,9 +46,13 @@ export const Projects = () => {
 
 	return (
 		<section
-			className={`project ${isVisible ? "visible" : ""}`}
-			id="projects"
 			ref={projectRef}
+			className={`project mt-12 transition-transform duration-500 ${
+				hasScrolled || projectView
+					? "opacity-100 translate-y-0"
+					: "opacity-0 translate-y-20"
+			}`}
+			id="projects"
 		>
 			<Container>
 				<Row>
@@ -61,7 +63,14 @@ export const Projects = () => {
 							together as a team is very enjoyable.
 						</p>
 						<div className="projectimg-card">
-							<Row className="justify-content-center mb-5 ">
+							<Row
+								ref={projectImageRef}
+								className={`justify-content-center mb-5 mt-12 transition-transform duration-500 ${
+									hasScrolled || projectImageInView
+										? "opacity-100 translate-y-0"
+										: "opacity-0 translate-y-20"
+								}`}
+							>
 								{projects.map((project, index) => {
 									return <ProjectCard key={index} {...project} />;
 								})}
