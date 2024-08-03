@@ -47,7 +47,7 @@ export const Projects = () => {
 	return (
 		<section
 			ref={projectRef}
-			className={`project mt-12 transition-transform duration-500 ${
+			className={`project mt-40 transition-transform duration-500 ${
 				hasScrolled || projectView
 					? "opacity-100 translate-y-0"
 					: "opacity-0 translate-y-20"
