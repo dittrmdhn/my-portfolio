@@ -46,16 +46,16 @@ const Educations = () => {
 							: "opacity-0 translate-y-20"
 					}`}
 				>
-					<div className="d-fjustify-content-center education-level">
-						<div className="education-item-step ">{/* tangga tingkatan */}</div>
+					<div className="d-fjustify-content-center education-level ">
+						<div className="education-item-step"></div>
 						<div className="education-item-step2 ">
 							{/* tangga tingkatan */}
 						</div>
 					</div>
-					<Row className="justify-content-center mt-5">
-						<Col md={12} className="mb-4">
+					<Row className="justify-content-center mt-5 ">
+						<Col md={12} className="mb-4 ">
 							<div className="education-item text-center mt-2 education-desc">
-								<h3 className="text-edu fw-bold mb-4 ">
+								<h3 className="fw-bold mb-4 text-red-700">
 									Universitas Bina Sarana Informatika
 								</h3>
 								<p className="education-text">Software Engeneering</p>
@@ -64,7 +64,7 @@ const Educations = () => {
 						</Col>
 						<Col md={12} className="mb-4">
 							<div className="education-item text-center education-desc">
-								<h3 className="text-edu fw-bold mb-4">
+								<h3 className="fw-bold mb-4 text-red-700">
 									MSIB Bootcamp Rakamin Academy
 								</h3>
 								<p className="education-text">
