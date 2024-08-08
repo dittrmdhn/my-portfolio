@@ -3,8 +3,9 @@ import { Navbar, Nav, Container, NavLink } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/github-color.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import { Link } from "react-router-dom";
 
-export const NavBar = () => {
+export const NavbarProject = () => {
 	const [activeLink, setActiveLink] = useState("home");
 	const [scrolled, setScrolled] = useState(false);
 	const [isScrolling, setIsScrolling] = useState(false);
@@ -94,45 +95,17 @@ export const NavBar = () => {
 					<Nav>
 						<Nav.Link
 							as={NavLink}
-							href="#home"
 							className={
 								activeLink === "home" ? "active navbar-link" : "navbar-link"
 							}
 							onClick={() => onUpdateActiveLink("home")}
 						>
-							Home
-						</Nav.Link>
-						<Nav.Link
-							as={NavLink}
-							href="#skills"
-							className={
-								activeLink === "skills" ? "active navbar-link" : "navbar-link"
-							}
-							onClick={() => onUpdateActiveLink("skills")}
-						>
-							Skills
-						</Nav.Link>
-						<Nav.Link
-							as={NavLink}
-							href="#projects"
-							className={
-								activeLink === "projects" ? "active navbar-link" : "navbar-link"
-							}
-							onClick={() => onUpdateActiveLink("projects")}
-						>
-							Projects
-						</Nav.Link>
-						<Nav.Link
-							as={NavLink}
-							href="#educations"
-							className={
-								activeLink === "educations"
-									? "active navbar-link"
-									: "navbar-link"
-							}
-							onClick={() => onUpdateActiveLink("educations")}
-						>
-							Education
+							<Link
+								to="/"
+								className="navbar-link text-gray-50 text-decoration-none hover:text-red-600"
+							>
+								Home
+							</Link>
 						</Nav.Link>
 					</Nav>
 

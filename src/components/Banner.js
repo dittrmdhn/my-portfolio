@@ -77,8 +77,8 @@ export const Banner = () => {
 								dataPeriod="10"
 								data-rotate='[ "Web Developer", "Back End" ]'
 							>
-								<span className="wrap text-red-700">{text}</span>
-								<span className="cursor !text-red-700">|</span>
+								<span className="wrap text-red-800">{text}</span>
+								<span className="cursor !text-red-800">|</span>
 							</span>
 						</h1>
 						<p className="!text-gray-400">

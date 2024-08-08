@@ -6,8 +6,8 @@ import { useInView } from "react-intersection-observer";
 const Educations = () => {
 	const [hasScrolled, setHasScrolled] = useState(false);
 	const { ref: educationRef, inView: educationView } = useInView({
-		triggerOnce: false,
-		threshold: 0.1,
+		triggerOnce: true,
+		threshold: 0.2,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
 				setHasScrolled(true);
@@ -17,7 +17,7 @@ const Educations = () => {
 
 	const { ref: education1Ref, inView: education1InView } = useInView({
 		triggerOnce: false,
-		threshold: 0.1,
+		threshold: 0.2,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
 				setHasScrolled(true);

@@ -19,8 +19,8 @@ export const Skills = () => {
 	const [hasScrolled, setHasScrolled] = useState(false);
 
 	const { ref: skillRef, inView: skillInView } = useInView({
-		triggerOnce: false, // Set to false to allow checking visibility multiple times
-		threshold: 0.1,
+		triggerOnce: true, // Set to false to allow checking visibility multiple times
+		threshold: 0.2,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
 				setHasScrolled(true); // Set state to true when the element is in view
@@ -28,15 +28,14 @@ export const Skills = () => {
 		},
 	});
 	const { ref: skillIconRef, inView: skillIconInView } = useInView({
-		triggerOnce: false,
-		threshold: 0.1,
+		triggerOnce: true,
+		threshold: 0.2,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
 				setHasScrolled(true); // Set state to true when the element is in view
 			}
 		},
 	});
-	console.log("hasScrolled: ", skillInView);
 
 	return (
 		<section
