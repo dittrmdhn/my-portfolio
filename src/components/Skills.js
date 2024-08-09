@@ -19,11 +19,11 @@ export const Skills = () => {
 	const [hasScrolled, setHasScrolled] = useState(false);
 
 	const { ref: skillRef, inView: skillInView } = useInView({
-		triggerOnce: true, // Set to false to allow checking visibility multiple times
+		triggerOnce: true,
 		threshold: 0.2,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
-				setHasScrolled(true); // Set state to true when the element is in view
+				setHasScrolled(true);
 			}
 		},
 	});
@@ -32,7 +32,7 @@ export const Skills = () => {
 		threshold: 0.2,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
-				setHasScrolled(true); // Set state to true when the element is in view
+				setHasScrolled(true);
 			}
 		},
 	});
@@ -40,11 +40,7 @@ export const Skills = () => {
 	return (
 		<section
 			ref={skillRef}
-			className={`skill mt-12 transition-transform duration-500 ${
-				hasScrolled || skillInView
-					? "opacity-100 translate-y-0"
-					: "opacity-0 translate-y-20"
-			}`}
+			className={`skill mt-12 transition-transform duration-500`}
 			id="skills"
 		>
 			<div className="container">
@@ -60,11 +56,7 @@ export const Skills = () => {
 							<div className="skill-slider mb-5">
 								<div
 									ref={skillIconRef}
-									className={`row justify-center mt-12 transition-transform duration-500 ${
-										hasScrolled || skillIconInView
-											? "opacity-100 translate-y-0"
-											: "opacity-0 translate-y-20"
-									}`}
+									className={`row justify-center mt-12 transition-transform duration-500`}
 								>
 									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
 										<div className="item flex flex-col items-center">

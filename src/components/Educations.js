@@ -27,11 +27,7 @@ const Educations = () => {
 	return (
 		<section
 			ref={educationRef}
-			className={`education mt-12 transition-transform duration-500 ${
-				hasScrolled || educationView
-					? "opacity-100 translate-y-0"
-					: "opacity-0 translate-y-20"
-			}`}
+			className={`education mt-12 transition-transform duration-500`}
 			id="educations"
 		>
 			<Container>
@@ -40,11 +36,7 @@ const Educations = () => {
 				</h2>
 				<div
 					ref={education1Ref}
-					className={`d-flex justify-center mt-12 transition-transform duration-500 ${
-						hasScrolled || education1InView
-							? "opacity-100 translate-y-0"
-							: "opacity-0 translate-y-20"
-					}`}
+					className={`d-flex justify-center mt-12 transition-transform duration-500 `}
 				>
 					<div className="d-fjustify-content-center education-level ">
 						<div className="education-item-step"></div>

@@ -61,11 +61,7 @@ export const Projects = () => {
 	return (
 		<section
 			ref={projectRef}
-			className={`project mt-40 transition-transform duration-500 ${
-				hasScrolled || projectView
-					? "opacity-100 translate-y-0"
-					: "opacity-0 translate-y-20"
-			}`}
+			className={`project mt-40 transition-transform duration-500 `}
 			id="projects"
 		>
 			<Container>
@@ -76,11 +72,7 @@ export const Projects = () => {
 				</p>
 				<div
 					ref={projectImageRef}
-					className={`project-card align-items-center mb-5 mt-5 transition-transform duration-500 ${
-						hasScrolled || projectImageInView
-							? "opacity-100 translate-y-0"
-							: "opacity-0 translate-y-20"
-					}`}
+					className={`project-card align-items-center mb-5 mt-5 transition-transform duration-500`}
 				>
 					{projects.map((project, index) => {
 						return (
