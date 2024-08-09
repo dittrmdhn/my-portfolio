@@ -40,7 +40,11 @@ export const Skills = () => {
 	return (
 		<section
 			ref={skillRef}
-			className={`skill mt-12 transition-transform duration-500`}
+			className={`skill mt-12 transition-transform duration-500 ${
+				hasScrolled || skillInView
+					? "opacity-100 translate-y-0"
+					: "opacity-0 translate-y-20"
+			}`}
 			id="skills"
 		>
 			<div className="container">
@@ -56,7 +60,11 @@ export const Skills = () => {
 							<div className="skill-slider mb-5">
 								<div
 									ref={skillIconRef}
-									className={`row justify-center mt-12 transition-transform duration-500`}
+									className={`row justify-center mt-12 transition-transform duration-500 ${
+										hasScrolled || skillIconInView
+											? "opacity-100 translate-y-0"
+											: "opacity-0 translate-y-20"
+									}`}
 								>
 									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
 										<div className="item flex flex-col items-center">

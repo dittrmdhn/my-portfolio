@@ -13,7 +13,7 @@ export const Projects = () => {
 	const [hasScrolled, setHasScrolled] = useState(false);
 	const { ref: projectRef, inView: projectView } = useInView({
 		triggerOnce: true,
-		threshold: 0.2,
+		threshold: 0.1,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
 				setHasScrolled(true);
@@ -23,7 +23,7 @@ export const Projects = () => {
 
 	const { ref: projectImageRef, inView: projectImageInView } = useInView({
 		triggerOnce: true,
-		threshold: 0.2,
+		threshold: 0.1,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {
 				setHasScrolled(true);
@@ -61,7 +61,11 @@ export const Projects = () => {
 	return (
 		<section
 			ref={projectRef}
-			className={`project mt-40 transition-transform duration-500 `}
+			className={`project mt-40 transition-transform duration-500 ${
+				hasScrolled || projectView
+					? "opacity-100 translate-y-0"
+					: "opacity-0 translate-y-20"
+			}`}
 			id="projects"
 		>
 			<Container>
@@ -72,7 +76,11 @@ export const Projects = () => {
 				</p>
 				<div
 					ref={projectImageRef}
-					className={`project-card align-items-center mb-5 mt-5 transition-transform duration-500`}
+					className={`project-card align-items-center mb-5 mt-5 transition-transform duration-500 ${
+						hasScrolled || projectImageInView
+							? "opacity-100 translate-y-0"
+							: "opacity-0 translate-y-20"
+					}`}
 				>
 					{projects.map((project, index) => {
 						return (

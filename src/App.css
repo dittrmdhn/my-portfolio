@@ -135,7 +135,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link.active {
 	font-weight: bold;
-	color: #a23524 !important;
+	color: rgb(220 38 38) !important;
 	letter-spacing: 0.8px;
 	padding: 0 25px;
 	font-size: 18px;
@@ -712,7 +712,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	left: 188px;
 	width: 30px; /* Diameter bulatan */
 	height: 30px; /* Diameter bulatan */
-	background-color: #a23524; /* Warna bulatan */
+	background-color: rgb(220 38 38); /* Warna bulatan */
 	border-radius: 50%; /* Membuat bulatan berbentuk lingkaran */
 }
 
@@ -741,7 +741,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	left: 188px;
 	width: 30px; /* Diameter bulatan */
 	height: 30px; /* Diameter bulatan */
-	background-color: #a23524; /* Warna bulatan */
+	background-color: rgb(220 38 38); /* Warna bulatan */
 	border-radius: 50%; /* Membuat bulatan berbentuk lingkaran */
 }
 
@@ -823,7 +823,7 @@ img.img-me {
 		left: 8px;
 		width: 30px; /* Diameter bulatan */
 		height: 30px; /* Diameter bulatan */
-		background-color: #a23524; /* Warna bulatan */
+		background-color: rgb(220 38 38); /* Warna bulatan */
 		border-radius: 50%; /* Membuat bulatan berbentuk lingkaran */
 	}
 
@@ -851,7 +851,7 @@ img.img-me {
 		left: 8px;
 		width: 30px; /* Diameter bulatan */
 		height: 30px; /* Diameter bulatan */
-		background-color: #a23524; /* Warna bulatan */
+		background-color: rgb(220 38 38); /* Warna bulatan */
 		border-radius: 50%; /* Membuat bulatan berbentuk lingkaran */
 	}
 }
@@ -889,7 +889,7 @@ img.img-me {
 		left: 68px;
 		width: 30px; /* Diameter bulatan */
 		height: 30px; /* Diameter bulatan */
-		background-color: #a23524; /* Warna bulatan */
+		background-color: rgb(220 38 38); /* Warna bulatan */
 		border-radius: 50%; /* Membuat bulatan berbentuk lingkaran */
 	}
 
@@ -917,7 +917,7 @@ img.img-me {
 		left: 68px;
 		width: 30px; /* Diameter bulatan */
 		height: 30px; /* Diameter bulatan */
-		background-color: #a23524; /* Warna bulatan */
+		background-color: rgb(220 38 38); /* Warna bulatan */
 		border-radius: 50%; /* Membuat bulatan berbentuk lingkaran */
 	}
 }
