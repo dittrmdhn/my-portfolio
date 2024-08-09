@@ -16,7 +16,7 @@ const Educations = () => {
 	});
 
 	const { ref: education1Ref, inView: education1InView } = useInView({
-		triggerOnce: false,
+		triggerOnce: true,
 		threshold: 0.2,
 		onChange: (inView) => {
 			if (inView && hasScrolled) {

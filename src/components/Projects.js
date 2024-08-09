@@ -92,7 +92,7 @@ export const Projects = () => {
 												<img
 													src={project.imgUrl}
 													alt={project.title}
-													className="img-fluid max-h-72  object-cover object-top w-full h-full rounded-xl"
+													className="img-fluid max-h-72  object-cover object-top w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
 												/>
 											</Link>
 										</Col>
@@ -100,7 +100,14 @@ export const Projects = () => {
 											md={6}
 											className="justify-start text-center text-md-start my-auto"
 										>
-											<h3 className="mt-3 fw-bold">{project.title}</h3>
+											<Link
+												to={project.detailUrl}
+												className="block text-decoration-none"
+											>
+												<h3 className="mt-3 fw-bold text-white">
+													{project.title}
+												</h3>
+											</Link>
 											<p className="text-center text-md-start">
 												{project.description}
 											</p>
@@ -113,7 +120,7 @@ export const Projects = () => {
 												<img
 													src={project.imgUrl}
 													alt={project.title}
-													className="img-fluid max-h-72  object-cover object-top w-full h-full rounded-xl"
+													className="img-fluid max-h-72  object-cover object-top w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
 												/>
 											</Link>
 										</Col>
@@ -121,7 +128,14 @@ export const Projects = () => {
 											md={6}
 											className="order-md-1 text-center text-md-end justify-end my-auto"
 										>
-											<h3 className="mt-3 fw-bold">{project.title}</h3>
+											<Link
+												to={project.detailUrl}
+												className="block text-decoration-none"
+											>
+												<h3 className="mt-3 fw-bold text-white">
+													{project.title}
+												</h3>
+											</Link>
 											<p className="text-center text-md-end">
 												{project.description}
 											</p>

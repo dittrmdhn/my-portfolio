@@ -587,7 +587,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-	background-color: #29262659;
+	background-color: transparent;
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;

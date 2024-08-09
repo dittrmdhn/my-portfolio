@@ -9,7 +9,7 @@ const MyListrik = () => {
 	return (
 		<>
 			<NavbarProject />
-			<div className="container mx-auto py-8 px-4 mt-48">
+			<div className="container mx-auto py-8 px-4 mt-16 md:mt-36">
 				<div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
 					<div className="flex-shrink-0 w-full md:w-1/2">
 						<img
@@ -51,21 +51,21 @@ const MyListrik = () => {
 						<div className="flex justify-center">
 							<img
 								src={ProjectImage2}
-								alt="inbako Screenshot"
+								alt="listrik Screenshot"
 								className="w-full h-auto rounded-lg shadow-lg object-cover"
 							/>
 						</div>
 						<div className="flex justify-center">
 							<img
 								src={ProjectImage3}
-								alt="Another inbako Screenshot"
+								alt="Another listrik Screenshot"
 								className="w-full h-auto rounded-lg shadow-lg object-cover"
 							/>
 						</div>
 						<div className="flex justify-center">
 							<img
 								src={ProjectImage4}
-								alt="Another inbako Screenshot"
+								alt="Another listrik Screenshot"
 								className="w-full h-auto rounded-lg shadow-lg object-cover"
 							/>
 						</div>

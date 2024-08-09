@@ -9,7 +9,7 @@ const Inbako = () => {
 	return (
 		<>
 			<NavbarProject />
-			<div className="container mx-auto py-8 px-4 mt-48">
+			<div className="container mx-auto py-8 px-4 mt-16 md:mt-36">
 				<div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
 					<div className="flex-shrink-0 w-full md:w-1/2">
 						<img
