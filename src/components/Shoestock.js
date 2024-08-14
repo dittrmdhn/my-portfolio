@@ -4,6 +4,7 @@ import ProjectImage3 from "../assets/project/shoestock3.png";
 import ProjectImage4 from "../assets/project/shoestock4.png";
 import { Footer } from "./Footer";
 import { NavbarProject } from "./NavbarProject";
+import navIcon2 from "../assets/img/github-color.svg";
 
 const Shoestock = () => {
 	return (
@@ -19,12 +20,24 @@ const Shoestock = () => {
 						/>
 					</div>
 					<div className="w-full md:w-1/2 text-center md:text-left">
-						<h1 className="text-3xl font-bold mb-4">Shoestock</h1>
-						<p className="text-lg mb-6 text-gray-300">
-							Shoestock is an innovative inventory management system for shoes.
-							Developed as part of a team project, it aims to streamline shoe
-							inventory management with an intuitive interface.
-						</p>
+						<div className="block">
+							<h1 className="text-3xl font-bold mb-4">Shoestock</h1>
+							<p className="text-lg mb-6 text-gray-300">
+								Shoestock is an innovative inventory management system for
+								shoes. Developed as part of a team project, it aims to
+								streamline shoe inventory management with an intuitive
+								interface.
+							</p>
+							<div className="social-icon">
+								<a
+									href="https://github.com/dittrmdhn/final-project-inventory-web"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img src={navIcon2} alt="github" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 

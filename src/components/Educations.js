@@ -56,7 +56,7 @@ const Educations = () => {
 						<Col md={12} className="mb-4 ">
 							<div className="education-item text-center mt-2 education-desc">
 								<h3 className="fw-bold mb-4 text-red-700">
-									Universitas Bina Sarana Informatika
+									Bina Sarana Informatika University
 								</h3>
 								<p className="education-text">Software Engeneering</p>
 								<p className="education-text">2021 - Present</p>

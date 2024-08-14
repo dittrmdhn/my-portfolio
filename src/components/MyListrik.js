@@ -4,6 +4,7 @@ import ProjectImage3 from "../assets/project/listrik3.png";
 import ProjectImage4 from "../assets/project/listrik4.png";
 import { Footer } from "./Footer";
 import { NavbarProject } from "./NavbarProject";
+import navIcon2 from "../assets/img/github-color.svg";
 
 const MyListrik = () => {
 	return (
@@ -19,11 +20,22 @@ const MyListrik = () => {
 						/>
 					</div>
 					<div className="w-full md:w-1/2 text-center md:text-left">
-						<h1 className="text-3xl font-bold mb-4">My Listrik</h1>
-						<p className="text-lg mb-6 text-gray-300">
-							My Listrik is a website for making electricity payments and
-							managing data such as rates, customers, bills, and payments.
-						</p>
+						<div className="block">
+							<h1 className="text-3xl font-bold mb-4">My Listrik</h1>
+							<p className="text-lg mb-6 text-gray-300">
+								My Listrik is a website for making electricity payments and
+								managing data such as rates, customers, bills, and payments.
+							</p>
+							<div className="social-icon">
+								<a
+									href="https://github.com/dittrmdhn/web-pembayaran-listrik"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img src={navIcon2} alt="github" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 

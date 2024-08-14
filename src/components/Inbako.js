@@ -3,6 +3,8 @@ import ProjectImage2 from "../assets/project/inbako2.png";
 import ProjectImage3 from "../assets/project/inbako3.png";
 import ProjectImage4 from "../assets/project/inbako4.png";
 import { Footer } from "./Footer";
+import navIcon2 from "../assets/img/github-color.svg";
+
 import { NavbarProject } from "./NavbarProject";
 
 const Inbako = () => {
@@ -19,11 +21,22 @@ const Inbako = () => {
 						/>
 					</div>
 					<div className="w-full md:w-1/2 text-center md:text-left">
-						<h1 className="text-3xl font-bold mb-4">Inbako</h1>
-						<p className="text-lg mb-6 text-gray-300">
-							Inbako is a website designed to assist in managing the
-							distribution of basic necessities to the community.
-						</p>
+						<div className="block">
+							<h1 className="text-3xl font-bold mb-4">Inbako</h1>
+							<p className="text-lg mb-6 text-gray-300">
+								Inbako is a website designed to assist in managing the
+								distribution of basic necessities to the community.
+							</p>
+							<div className="social-icon">
+								<a
+									href="https://github.com/fate-awaken/inbako"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img src={navIcon2} alt="github" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 
