@@ -11,6 +11,7 @@ import { ReactComponent as MySQL } from "../assets/logo/mysql-color.svg";
 import { ReactComponent as Postman } from "../assets/logo/postman-color.svg";
 import { ReactComponent as React } from "../assets/logo/react-color.svg";
 import { ReactComponent as Prisma } from "../assets/logo/prisma-color.svg";
+import { ReactComponent as MongoDB } from "../assets/logo/mongodb-color.svg";
 import "../App.css";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
@@ -140,6 +141,12 @@ export const Skills = () => {
 										<div className="item flex flex-col items-center">
 											<Prisma width="100" />
 											<h5 className="text-skill mt-2 text-center">Prisma</h5>
+										</div>
+									</div>
+									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
+										<div className="item flex flex-col items-center">
+											<MongoDB width="100" />
+											<h5 className="text-skill mt-2 text-center">MongoDB</h5>
 										</div>
 									</div>
 								</div>
