@@ -20,6 +20,14 @@
 }
 
 /************ Default Css ************/
+[data-scroll-container] {
+	overflow: hidden;
+}
+
+.locomotive-scroll {
+	overflow: hidden;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -61,7 +69,9 @@ ul {
 	line-height: normal;
 	text-decoration: none;
 }
-
+[data-scroll-container] {
+	overflow: scroll !important; /* Pastikan scroll bisa ditampilkan */
+}
 a:hover {
 	text-decoration: none;
 }
