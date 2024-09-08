@@ -12,6 +12,8 @@ import { ReactComponent as Postman } from "../assets/logo/postman-color.svg";
 import { ReactComponent as React } from "../assets/logo/react-color.svg";
 import { ReactComponent as Prisma } from "../assets/logo/prisma-color.svg";
 import { ReactComponent as MongoDB } from "../assets/logo/mongodb-color.svg";
+import { ReactComponent as Php } from "../assets/logo/php-color.svg";
+import { ReactComponent as CI3 } from "../assets/logo/codeigniter-color.svg";
 import "../App.css";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
@@ -89,6 +91,12 @@ export const Skills = () => {
 									</div>
 									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
 										<div className="item flex flex-col items-center">
+											<Php width="100" />
+											<h5 className="text-skill mt-2 text-center">PHP</h5>
+										</div>
+									</div>
+									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
+										<div className="item flex flex-col items-center">
 											<TailwindLogo width="100" />
 											<h5 className="text-skill mt-2 text-center">Tailwind</h5>
 										</div>
@@ -97,6 +105,14 @@ export const Skills = () => {
 										<div className="item flex flex-col items-center">
 											<BootstrapLogo width="100" />
 											<h5 className="text-skill mt-2 text-center">Bootstrap</h5>
+										</div>
+									</div>
+									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
+										<div className="item flex flex-col items-center">
+											<CI3 width="100" />
+											<h5 className="text-skill mt-2 text-center">
+												Codeigniter 3
+											</h5>
 										</div>
 									</div>
 									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
