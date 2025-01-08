@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import Project1 from "../assets/project/shoestock.png";
 import Project2 from "../assets/project/inbako.png";
 import Project3 from "../assets/project/listrik.png";
+import Project4 from "../assets/project/simpus-login.png";
 import "animate.css";
 import "../App.css";
 import { useState } from "react";
@@ -55,6 +56,14 @@ export const Projects = () => {
 			imgUrl: Project3,
 			isImageLeft: true,
 			detailUrl: "/project/mylistrik",
+		},
+		{
+			title: "Project In Internship | SIMPUS Depok",
+			description:
+				"This is a project I worked on with a team to create an Information System for SIMPUS Depok. It was built using Golang and Next.js.",
+			imgUrl: Project4,
+			isImageLeft: false,
+			detailUrl: "/project/simpus",
 		},
 	];
 
@@ -120,7 +129,7 @@ export const Projects = () => {
 												<img
 													src={project.imgUrl}
 													alt={project.title}
-													className="img-fluid max-h-72  object-cover object-top w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
+													className="img-fluid max-h-72 object-cover object-top w-full h-full rounded-xl hover:scale-105 transition-transform duration-300"
 												/>
 											</Link>
 										</Col>

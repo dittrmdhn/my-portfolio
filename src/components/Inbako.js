@@ -45,7 +45,8 @@ const Inbako = () => {
 						Project Details
 					</h2>
 					<p className="text-gray-300 mb-4 ">
-						<strong>Technologies Used:</strong> Codeigniter 3, MySQL, Bootstrap
+						<strong>Technologies Used:</strong> Codeigniter 3, MySQL, and
+						Bootstrap
 					</p>
 					<p className="text-gray-300 mb-4">
 						In the Web Programming 3 course, my lecturer asked us to create a

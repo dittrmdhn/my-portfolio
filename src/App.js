@@ -7,6 +7,7 @@ import Inbako from "./components/Inbako";
 import MyListrik from "./components/MyListrik";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Simpus from "./components/Simpus";
 
 const ScrollToTop = () => {
 	const { pathname } = useLocation();
@@ -28,6 +29,7 @@ function App() {
 					<Route path="/project/shoestock" element={<Shoestock />} />
 					<Route path="/project/inbako" element={<Inbako />} />
 					<Route path="/project/mylistrik" element={<MyListrik />} />
+					<Route path="/project/simpus" element={<Simpus />} />
 				</Routes>
 			</Router>
 		</div>

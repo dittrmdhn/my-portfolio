@@ -47,7 +47,7 @@ const Shoestock = () => {
 					</h2>
 					<p className="text-gray-300 mb-4 ">
 						<strong>Technologies Used:</strong> Express, Next.js, Tailwind CSS,
-						PostgreSQL
+						and PostgreSQL
 					</p>
 					<p className="text-gray-300 mb-4">
 						Currently, shoes are no longer just a necessity but a hobby for many

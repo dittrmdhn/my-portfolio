@@ -14,6 +14,9 @@ import { ReactComponent as Prisma } from "../assets/logo/prisma-color.svg";
 import { ReactComponent as MongoDB } from "../assets/logo/mongodb-color.svg";
 import { ReactComponent as Php } from "../assets/logo/php-color.svg";
 import { ReactComponent as CI3 } from "../assets/logo/codeigniter-color.svg";
+import { ReactComponent as Go } from "../assets/logo/go-color.svg";
+import { ReactComponent as Next } from "../assets/logo/nextdotjs-color.svg";
+import { ReactComponent as Typescript } from "../assets/logo/typescript-color.svg";
 import "../App.css";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
@@ -71,28 +74,10 @@ export const Skills = () => {
 								>
 									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
 										<div className="item flex flex-col items-center">
-											<HtmlLogo width="100" />
-											<h5 className="text-skill mt-2 text-center">HTML</h5>
-										</div>
-									</div>
-									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
-										<div className="item flex flex-col items-center">
-											<CssLogo width="100" />
-											<h5 className="text-skill mt-2 text-center">CSS</h5>
-										</div>
-									</div>
-									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
-										<div className="item flex flex-col items-center">
 											<JavascriptLogo width="100" />
 											<h5 className="text-skill mt-2 text-center">
 												Javascript
 											</h5>
-										</div>
-									</div>
-									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
-										<div className="item flex flex-col items-center">
-											<Php width="100" />
-											<h5 className="text-skill mt-2 text-center">PHP</h5>
 										</div>
 									</div>
 									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
@@ -151,6 +136,26 @@ export const Skills = () => {
 										<div className="item flex flex-col items-center">
 											<React width="100" />
 											<h5 className="text-skill mt-2 text-center">React</h5>
+										</div>
+									</div>
+									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
+										<div className="item flex flex-col items-center">
+											<Go width="100" />
+											<h5 className="text-skill mt-2 text-center">Golang</h5>
+										</div>
+									</div>
+									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
+										<div className="item flex flex-col items-center">
+											<Next width="100" />
+											<h5 className="text-skill mt-2 text-center">Next.js</h5>
+										</div>
+									</div>
+									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
+										<div className="item flex flex-col items-center">
+											<Typescript width="100" />
+											<h5 className="text-skill mt-2 text-center">
+												Typescript
+											</h5>
 										</div>
 									</div>
 									<div className="col-6 col-md-3 mt-5 flex flex-col items-center">
