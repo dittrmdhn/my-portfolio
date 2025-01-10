@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 
 export const Footer = () => {
+	const currentYear = new Date().getFullYear();
 	return (
 		<footer className="footer d-flex justify-content-center align-items-center">
 			<Container>
@@ -8,7 +9,7 @@ export const Footer = () => {
 					<Col xs="auto p-3 w-100 text-center">
 						<div className="border-top w-4/5 mx-auto"></div>
 						<p className="mb-2 mt-4 fw-bold mx-auto">
-							2024 &copy; All Rights Reserved.
+							{currentYear} &copy; All Rights Reserved.
 						</p>
 					</Col>
 				</Row>
