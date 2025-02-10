@@ -4,6 +4,7 @@ import Project1 from "../assets/project/shoestock.png";
 import Project2 from "../assets/project/inbako.png";
 import Project3 from "../assets/project/listrik.png";
 import Project4 from "../assets/project/simpus-login.png";
+import Project5 from "../assets/project/dittseek-of.png";
 import "animate.css";
 import "../App.css";
 import { useState } from "react";
@@ -64,6 +65,14 @@ export const Projects = () => {
 			imgUrl: Project4,
 			isImageLeft: false,
 			detailUrl: "/project/simpus",
+		},
+		{
+			title: " Mini Project | dittseek ",
+			description:
+				"A chat application powered by the Deepseek API from Ollama, simulating AI-driven conversations. Built with React and Vite, this project demonstrates real-time messaging and API integration.",
+			imgUrl: Project5,
+			isImageLeft: true,
+			detailUrl: "/project/dittseek",
 		},
 	];
 

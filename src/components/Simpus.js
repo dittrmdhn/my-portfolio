@@ -59,11 +59,11 @@ const Simpus = () => {
 						efficiency, accuracy, and accessibility of healthcare services for
 						the community while providing an organized and user-friendly
 						solution for healthcare staff to manage information seamlessly.{" "}
-						<i>
-							This project is currently under development to ensure it meets the
-							highest standards of functionality and usability.
-						</i>
 					</p>
+					<i className="text-gray-300">
+						This project is currently under development to ensure it meets the
+						highest standards of functionality and usability.
+					</i>
 
 					<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
 						<div className="flex justify-center">
