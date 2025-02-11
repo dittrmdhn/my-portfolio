@@ -1,4 +1,4 @@
-import ProjectImage1 from "../assets/project/dittseek-off.png";
+import ProjectImage1 from "../assets/project/dittseek-of.png";
 import ProjectImage2 from "../assets/project/dittseek-on.png";
 
 import { Footer } from "./Footer";
