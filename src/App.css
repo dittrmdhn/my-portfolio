@@ -296,9 +296,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	background: linear-gradient(
 		90.21deg,
 		rgba(15, 13, 14, 0.911) 15.91%,
-		rgba(240, 10, 10, 0.767) 90.58%
+		#f00a0ac4 90.58%
 	);
-	border: 1px solid rgba(255, 255, 255, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.5);
 	font-size: 20px;
 	margin-bottom: 16px;
 	display: inline-block;

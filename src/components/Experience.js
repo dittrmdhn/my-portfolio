@@ -29,9 +29,19 @@ export const Experience = () => {
 
 	const projects = [
 		{
+			title: "Store Crew",
+			description: "PT Albany Corona Lestari",
+			duration: "April 2020 - Oktober 2021",
+		},
+		{
 			title: "Full Stack Developer",
 			description: "PT Ciptadra Softindo",
-			duration: "3 Months",
+			duration: "Oktober - Desember 2024 (Internship)",
+		},
+		{
+			title: "Security Operation Center (SOC) Analyst",
+			description: "PT Systema Global Solusindo",
+			duration: "April - September 2025 (Internship)",
 		},
 	];
 
@@ -60,7 +70,7 @@ export const Experience = () => {
 								: "opacity-0 translate-y-20"
 						}`}
 					>
-						<Col md={12} className="mb-4">
+						<Col md={12}>
 							<div className="rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 text-center">
 								<h3 className="text-xl font-bold text-red-700 mb-2">
 									{project.title}
@@ -69,7 +79,7 @@ export const Experience = () => {
 									{project.description}
 								</h4>
 								<p className="text-gray-500 dark:text-gray-400 italic">
-									{project.duration} (internship)
+									{project.duration}
 								</p>
 							</div>
 						</Col>

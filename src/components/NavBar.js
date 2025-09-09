@@ -175,7 +175,7 @@ export const NavBar = () => {
 						<a
 							href={`mailto:adityaramadhan63.ar@gmail.com?subject=Hiring Inquiry`}
 						>
-							<button className="vvd">
+							<button className="">
 								<span>Hire Me</span>
 							</button>
 						</a>

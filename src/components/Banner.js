@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/foto-me.jpg";
-import myImage from "../assets/img/myimage.jpg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -13,7 +12,7 @@ export const Banner = () => {
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [text, setText] = useState("");
 	const [delta, setDelta] = useState(200);
-	const toRotate = ["Web Developer", "Back End"];
+	const toRotate = ["Web Developer", "Back End", "SOC Analyst"];
 	const [waiting, setWaiting] = useState(false);
 
 	useEffect(() => {
@@ -59,7 +58,7 @@ export const Banner = () => {
 
 	const cvClink = () => {
 		window.open(
-			"https://drive.google.com/file/d/1R9_28W2ZEWdUPm_-UrKch4mqxPLpZHE9/view?usp=sharing"
+			"https://drive.google.com/file/d/1vkn90yayUj1ffpevhLFzg7pnhpD_v4ku/view?usp=sharing"
 		);
 	};
 
@@ -73,19 +72,16 @@ export const Banner = () => {
 							{`Hello, I'm Aditya`}
 							<br></br>
 							{"    "}
-							<span
-								className="txt-rotate text-danger"
-								dataPeriod="10"
-								data-rotate='[ "Web Developer", "Back End" ]'
-							>
-								<span className="wrap text-red-800">{text}</span>
-								<span className="cursor !text-red-800">|</span>
+							<span className="txt-rotate text-danger" dataPeriod="10">
+								<span className="wrap text-red-700">{text}</span>
+								<span className="cursor !text-red-700">|</span>
 							</span>
 						</h1>
 						<p className="!text-gray-400">
-							A software engineering student with a passion for technology,
-							especially programming. Working in a team is something I find very
-							enjoyable.
+							A software engineering graduate with a strong passion for
+							technology and web development. Experienced in full stack
+							development and security operations, with solid teamwork and
+							problem-solving skills.
 						</p>
 						<TrackVisibility>
 							{({ isVisible }) => (
